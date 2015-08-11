@@ -1,0 +1,25 @@
+{
+  "name": "pimpmycause-rebuild",
+  "version": "0.1.0",
+  "description": "Pimp My Cause rebuild frontend",
+  "main": "inject.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/womenhackfornonprofits/pimpmycause-rebuild"
+  },
+  "author": "Liliana Kastilio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/womenhackfornonprofits/pimpmycause-rebuild/issues"
+  },
+  "homepage": "",
+  "devDependencies": {
+    "grunt-contrib-imagemin": "~0.7.1",
+    "grunt-contrib-qunit": "1.3.11",
+    "grunt-contrib-sass": "1.3.11",
+    "grunt-contrib-uglify": "1.3.11",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-s3": "~0.2.0-alpha.3",
+    "sass": "~0.5.0"
+  }
+}
