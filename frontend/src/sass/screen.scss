@@ -1,0 +1,10 @@
+@import "bourbon/bourbon";
+@import "partials/base";
+
+*, 
+*:before,
+*:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0; 
+}
