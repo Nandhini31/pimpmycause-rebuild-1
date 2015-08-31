@@ -54,15 +54,14 @@ grunt.initConfig({
     main: {
       files: [
         // includes files within path
-        {expand: false, src: ['*.css'], dest: 'src/stylesheets/', filter: 'isFile'},
-        {expand: true, cwd: 'src', src: ['**/*.html'], dest: 'deploy/'},
+        {expand: true, cwd: 'src/', src: ['*.html'], dest: 'deploy/', filter: 'isFile'},
       ]
     }
   },
   sass: {
     dist: {
       files: {
-        'src/stylesheets/screen.css': 'src/sass/screen.scss'
+        'src/css/screen.css': 'src/sass/screen.scss'
       }
     }
   },
@@ -81,14 +80,12 @@ grunt.initConfig({
       separator: ';'
     },
     dist: {
-      src: ['src/js/scroll.js','src/js/map.js'],
-      dest: 'deploy/js/script.js'
     }
   },
   cssmin: {
     combine: {
       files: {
-        'deploy/stylesheets/screen.css': ['src/stylesheets/screen.css']
+        'deploy/css/screen.css': ['src/css/screen.css']
       }
     }
   },
@@ -106,8 +103,6 @@ grunt.initConfig({
   uglify: {
     my_target: {
       files: {
-        'src/js/map.js': ['deploy/js/map.js'],        
-        'src/js/workshop-map.js': ['deploy/js/workshop-map.js']
 
       }
     }
@@ -122,8 +117,6 @@ grunt.initConfig({
 });
 
 grunt.registerTask('deploy', ['default', 'aws_s3:live']);
-//grunt.registerTask('download', ['aws_s3:download']);
-grunt.registerTask('default', ['copy','sass', 'concat', 'uglify', 'cssmin', 'htmlmin']);
-// grunt.registerTask('watch', ['watch']);
+grunt.registerTask('default', ['copy','sass', 'concat', 'cssmin', 'htmlmin']);
 
 };

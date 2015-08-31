@@ -27,6 +27,8 @@
     "grunt-contrib-watch": "~0.6.1",
     "grunt-s3": "~0.2.0-alpha.3",
     "jshint": "^2.8.0",
-    "sass": "~0.5.0"
+    "sass": "~0.5.0",
+    "imagemin-mozjpeg": "~5.1.0",
+    "grunt-aws-s3": "~0.14.0"
   }
 }
