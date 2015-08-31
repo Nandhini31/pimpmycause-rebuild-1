@@ -32,7 +32,7 @@ grunt.initConfig({
         bucket: '<%= s3settings.bucket %>',
         differential: false ,// Only uploads the files that have changed
         debug: false,
-  /**      params: {
+        /**params: {
           ContentEncoding: 'gzip', // applies to all the files!
           CacheControl: 'max-age=290304000, public',
         }**/

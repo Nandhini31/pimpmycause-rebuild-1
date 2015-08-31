@@ -32,7 +32,7 @@ footer {
 	position: absolute;
    	bottom: 0;
    	width: 100%;
-   	height: $footer-height;   /* Height of the footer */
+   	height: $footer-height;
 }
 
 nav {
@@ -44,7 +44,7 @@ nav {
 	ul {
 		padding: 0;
 		list-style: none;
-		width: 100%;
+		width: 80%;
 		margin: 0 auto;
 		display: flex;
 		flex-wrap: wrap;
