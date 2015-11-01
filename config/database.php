@@ -56,7 +56,7 @@ return [
             'driver'    => 'mysql',
             'host'      => 'localhost',
             'port'      => '',
-            'database'  => 'database',
+            'database'  => 'pmc',
             'username'  => 'root',
             'password'  => 'root',
             'unix_socket' => '/Applications/MAMP/tmp/mysql/mysql.sock',
